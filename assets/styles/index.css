@@ -1,0 +1,63 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+.active{
+    font-weight: 500;
+}
+/* header */
+nav img{
+    width: 80px;
+}
+nav .navbar-brand{
+    color: white;
+}
+nav .text-platzi{
+    color: #97c93e;
+    font-weight: 500;
+}
+/* main */
+main .carousel-inner img{
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+main #carousel{
+    position: relative;
+}
+main #carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .5);
+    color: white;
+    z-index: 1;
+}
+main #carousel .container,
+main #carousel .row{
+    height: 100%;
+}
+main .container .btn-platzi,
+.btn-platzi{
+    background-color: #97c93e;
+    color: white;
+}
+main .container .btn-platzi:hover,
+.btn-platzi:hover{
+    background-color: #6f942d;
+}
+/* place-time */
+
+main #place-time{
+    background-color: #212529;
+    color: white;
+}
+main #place-time img{
+    width: 100%;
+}
+/* footer */
+footer{
+    background-color: #03091e;
+}
