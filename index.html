@@ -1,225 +1,378 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>bootstrap</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="./index.css">
-    </head>
-    <body data-bs-target="#navbarSupportedContent" data-bs-root-margin="0px 0px -40%"  data-bs-spy="scroll" tabindex="0" class="scrollspy-example" data-bs-smooth-scroll="true">
-        <!-- Header -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-3 ">    
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/images/platzi-logo.png?raw=true" alt="">
-                    Conf Hawai
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#carousel">La conferencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#speakers">Los oradores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#place-time">El lugar y la fecha</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#new-speakers">Conviertete en orador</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-platzi" href="#" data-bs-toggle="modal" data-bs-target="#buy-tickets">Comprar tickets</a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    
-        <!-- main -->
-        <main >
-            <!-- carousel -->
-            <section id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/images/hawaii.jpg?raw=true" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/images/hawaii2.jpg?raw=true" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/images/hawaii3.jpeg?raw=true" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <div class="overlay">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="text-center col-md-6 offset-md-6 text-md-end">
-                                <h1>Platzi Conf Hawaii</h1>
-                                <p class="d-none d-md-block">Platzi Conf llega por primera vez a Hawaii! un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro del internet. Ven a conocer miembros del Team Platzi, a otros estudiantes de Platzi y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                                <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                                <button type="button" class="btn btn-platzi" data-bs-toggle="modal" data-bs-target="#buy-tickets">Comprar tickets</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <!-- speakers -->
-            <section id="speakers">
-                <div class="container">
-                    <div class="row">
-                        <div class="col text-uppercase text-center mt-4">
-                            <small>Conoce a nuestros</small>
-                            <h2>Oradores</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <img src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/speakers/sacha.jpg?raw=true" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <span class="badge text-bg-warning">JavaScript</span>
-                                    <span class="badge text-bg-info">React</span>
-                                    <h5 class="card-title">Sacha Lifszyc</h5>
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae placeat dolor quasi, explicabo adipisci eligendi id expedita iusto temporibus?</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <img src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/speakers/leonidas.jpeg?raw=true" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <span class="badge text-bg-warning">JavaScript</span>
-                                    <span class="badge text-bg-info">React</span>
-                                    <h5 class="card-title">Leonidas Esteban</h5>
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae placeat dolor quasi, explicabo adipisci eligendi id expedita iusto temporibus?</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <img src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/speakers/freddy.jpeg?raw=true" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <span class="badge text-bg-warning">JavaScript</span>
-                                    <span class="badge text-bg-info">React</span>
-                                    <h5 class="card-title">Freddy Vega</h5>
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae placeat dolor quasi, explicabo adipisci eligendi id expedita iusto temporibus?</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <!-- place-time -->
-            <section id="place-time">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-6 ps-0 pe-0">
-                            <img src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/images/honolulu.jpg?raw=true" alt="">
-                        </div>
-                        <div class="col-lg-6 pt-4 pb-4">
-                            <h2>Honolulu - Octubre 2025</h2>
-                            <p>Honolulu es la capital y localidad más grande del estado de Hawái, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la isla (aproximadamente 600 km² de superficie).</p>
-                            <a href="https://es.wikipedia.org/wiki/Honolulu" type="button" class="btn btn-outline-light">Conoce más</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <!-- new-speakers -->
-            <section id="new-speakers" class="pt-3 pb-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col text-center text-uppercase">
-                            <small>Conviertete en un</small>
-                            <h2>orador</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col text-center">
-                            <p>Anotate como orador para dar una <abbr data-bs-toggle="tooltip" title="charla de 5 minutos">charla ignate</abbr>. Cuentanos de que quieres hablar!</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
-                            <form action="">
-                                <div class="row">
-                                    <div class="form-label col-12 col-md-6">
-                                      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-                                    </div>
-                                    <div class="form-label col-12 col-md-6">
-                                      <input type="text" class="form-control" placeholder="Apedillo" aria-label="Last name">
-                                    </div>
-                                  </div>
-                                  <div class="form-row">
-                                      <div class="col form-label">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre que quieres hablar?"></textarea>
-                                        <small class="form-text text-muted">
-                                            Recuerda incluir un titulo para tu charla
-                                        </small>
-                                      </div>
-                                  </div>
-                                  <div class="form-row">
-                                      <div class="col d-grid">
-                                          <button class="btn btn-platzi btn-primary" type="button">Enviar</button>
-                                      </div>
-                                  </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer class="pb-4 pt-4">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-12 col-md"><a href="#">Preguntas frecuentes</a></div>
-                    <div class="col-12 col-md"><a href="#">Contactanos</a></div>
-                    <div class="col-12 col-md"><a href="#">Prensa</a></div>
-                    <div class="col-12 col-md"><a href="#">Conferencias</a></div>
-                    <div class="col-12 col-md"><a href="#">Terminos y condiciones</a></div>
-                    <div class="col-12 col-md"><a href="#">Privacidad</a></div>
-                    <div class="col-12 col-md"><a href="#">Estudiantes</a></div>
-                </div>
-            </div>
-        </footer>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="buy-tickets" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Comprar tickets</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                              </div>
-                        </form>
-                        <div class="alert alert-warning" role="alert">
-                            Recibiras un correo de confirmación si sales sorteado.
-                          </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-platzi">Comprar</button>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body
+    data-bs-target="#navbarSupportedContent"
+    data-bs-root-margin="0px 0px -40%"
+    data-bs-spy="scroll"
+    tabindex="0"
+    class="scrollspy-example"
+    data-bs-smooth-scroll="true"
+  >
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/images/platzi-logo.png?raw=true"
+            alt=""
+          />
+          Conf Hawai
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#carousel">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#place-time">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#new-speakers">Conviertete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-platzi"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#buy-tickets"
+                >Comprar tickets</a
+              >
+            </li>
+          </ul>
         </div>
-        <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-        <script src="./index.js"></script>
-    </body>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+      <!-- carousel -->
+      <section
+        id="carousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-pause="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/images/hawaii.jpg?raw=true"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/images/hawaii2.jpg?raw=true"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/images/hawaii3.jpeg?raw=true"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="overlay">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="text-center col-md-6 offset-md-6 text-md-end">
+                <h1>Platzi Conf Hawaii</h1>
+                <p class="d-none d-md-block">
+                  Platzi Conf llega por primera vez a Hawaii! un evento para
+                  compartir con nuestra comunidad el conocimiento y experiencia
+                  de los expertos que estan creando el futuro del internet. Ven
+                  a conocer miembros del Team Platzi, a otros estudiantes de
+                  Platzi y a los oradores de primer nivel que tenemos para ti.
+                  Te esperamos!
+                </p>
+                <button type="button" class="btn btn-outline-light">
+                  Quiero ser orador
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-platzi"
+                  data-bs-toggle="modal"
+                  data-bs-target="#buy-tickets"
+                >
+                  Comprar tickets
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- speakers -->
+      <section id="speakers">
+        <div class="container">
+          <div class="row">
+            <div class="col text-uppercase text-center mt-4">
+              <small>Conoce a nuestros</small>
+              <h2>Oradores</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/speakers/sacha.jpg?raw=true"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <span class="badge text-bg-warning">JavaScript</span>
+                  <span class="badge text-bg-info">React</span>
+                  <h5 class="card-title">Sacha Lifszyc</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa molestiae placeat dolor quasi, explicabo adipisci
+                    eligendi id expedita iusto temporibus?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/speakers/leonidas.jpeg?raw=true"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <span class="badge text-bg-warning">JavaScript</span>
+                  <span class="badge text-bg-info">React</span>
+                  <h5 class="card-title">Leonidas Esteban</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa molestiae placeat dolor quasi, explicabo adipisci
+                    eligendi id expedita iusto temporibus?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/speakers/freddy.jpeg?raw=true"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <span class="badge text-bg-warning">JavaScript</span>
+                  <span class="badge text-bg-info">React</span>
+                  <h5 class="card-title">Freddy Vega</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa molestiae placeat dolor quasi, explicabo adipisci
+                    eligendi id expedita iusto temporibus?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- place-time -->
+      <section id="place-time">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 ps-0 pe-0">
+              <img
+                src="https://github.com/platzi/bootstrap/blob/gh-pages/assets/images/honolulu.jpg?raw=true"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-6 pt-4 pb-4">
+              <h2>Honolulu - Octubre 2025</h2>
+              <p>
+                Honolulu es la capital y localidad más grande del estado de
+                Hawái, en los Estados Unidos. Honolulu es la más sureña de entre
+                las principales ciudades estadounidenses. Aunque el nombre de
+                Honolulu se refiere al área urbana en la costa sureste de la
+                isla de Oahu, la ciudad y el condado de Honolulu han formado una
+                ciudad-condado consolidada que cubre toda la isla
+                (aproximadamente 600 km² de superficie).
+              </p>
+              <a
+                href="https://es.wikipedia.org/wiki/Honolulu"
+                type="button"
+                class="btn btn-outline-light"
+                >Conoce más</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- new-speakers -->
+      <section id="new-speakers" class="pt-3 pb-3">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center text-uppercase">
+              <small>Conviertete en un</small>
+              <h2>orador</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p>
+                Anotate como orador para dar una
+                <abbr data-bs-toggle="tooltip" title="charla de 5 minutos"
+                  >charla ignate</abbr
+                >. Cuentanos de que quieres hablar!
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+              <form action="">
+                <div class="row">
+                  <div class="form-label col-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nombre"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="form-label col-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Apedillo"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col form-label">
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                      placeholder="Sobre que quieres hablar?"
+                    ></textarea>
+                    <small class="form-text text-muted">
+                      Recuerda incluir un titulo para tu charla
+                    </small>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col d-grid">
+                    <button class="btn btn-platzi btn-primary" type="button">
+                      Enviar
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pb-4 pt-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-md"><a href="#">Preguntas frecuentes</a></div>
+          <div class="col-12 col-md"><a href="#">Contactanos</a></div>
+          <div class="col-12 col-md"><a href="#">Prensa</a></div>
+          <div class="col-12 col-md"><a href="#">Conferencias</a></div>
+          <div class="col-12 col-md">
+            <a href="#">Terminos y condiciones</a>
+          </div>
+          <div class="col-12 col-md"><a href="#">Privacidad</a></div>
+          <div class="col-12 col-md"><a href="#">Estudiantes</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="buy-tickets"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comprar tickets</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </form>
+            <div class="alert alert-warning" role="alert">
+              Recibiras un correo de confirmación si sales sorteado.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
