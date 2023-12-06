@@ -1,5 +1,7 @@
 # Bootstrap
 
+Explora la emocionante información de próximos evento en la Landing Page especialmente diseñada con fines educativos para brindarte detalles clave y una experiencia atractiva. Esta página, creada con tecnologías modernas, garantiza una presentación elegante y accesible, destacando la versatilidad de las herramientas disponibles para desarrolladores educativos.
+
 Esta es una landing page sobre información de un evento.
 
 ## Tecnologia utilizadas
